@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("Nhập số thứ nhất"))
+    let num2 = parseInt(prompt("Nhập số thứ hai"))
+    let num3 = parseInt(prompt("Nhập số thứ ba"))
+    document.write(soSanh(num1, num2, num3))
+
+    function soSanh(num1, num2, num3) {
+        if (num1 !== num2 !== num3) {
+            if (num1 < num2 && num1 < num3) {
+                return "Số nhỏ nhất là " + num1;
+            } else if (num1 > num2 && num2 < num3) {
+                return "số nhỏ nhât là " + num2
+            } else{
+                return  "Số nhỏ nhất là " + num3
+            }
+        }
+    }
+</script>
+</body>
+</html>

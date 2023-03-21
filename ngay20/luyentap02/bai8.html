@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Hãy nhập mảng")
+    arr = a.split(",")
+    document.write(daoNguoc(arr))
+   // arr.reverse();
+   // console.log(arr);
+    function daoNguoc(arr) {
+        for (let i = 1; i <= arr.length; i++){
+          let a = arr[i-1]
+            arr[i-1] = arr[arr.length-i]
+            arr[arr.length-i] = a
+            if (arr.length - i * 2 === 1 || arr.length - i * 2 ===0){
+                return arr
+            }
+        }
+    }
+</script>
+</body>
+</html>

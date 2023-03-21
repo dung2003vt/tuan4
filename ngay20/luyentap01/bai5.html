@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["polaris", "aldebaran", "deneb", "vega", "altair", "dubhe", "regulus"];
+    let arr2 = ["ursa minor", "tarurus", "cygnus", "lyra", "aquila", "ursa major", "leo"];
+    let star = prompt("Nhập tên ngôi sao")
+    document.write(checkStar(star))
+
+    function checkStar(star) {
+        let result = "";
+        let count = 0
+        for (let i = 0; i < arr1.length; i++) {
+            if (star === arr1[i]) {
+                count = i
+                for (let j = 0; j < arr2.length; j++) {
+                     if (count === j) {
+                         result = arr2[j]
+                     }
+                 }
+             } else {
+                result = "Bạn không biết gì về sao, hãy tìm hiểu thêm rồi comeback"
+            }
+        }
+        return result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let r = parseInt(prompt("Nhập bán kính hình tròn"))
+  const PI = 3.141592653589
+  document.write("Chu vi hình tròn là " + chuVi(r) + "<br>")
+  document.write("Diện tích hình tròn là " + dienTich(r))
+  function chuVi(r){
+    c = r * 2 * PI
+    return c
+  }
+  function dienTich(r){
+    s = r * r * PI
+    return s
+  }
+</script>
+</body>
+</html>

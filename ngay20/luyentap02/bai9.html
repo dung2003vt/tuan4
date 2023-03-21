@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Hãy nhập mảng")
+    let n = prompt("Hãy nhập kí tự muốn kiểm tra")
+    arr = a.split(",")
+    document.write(kiemTra(arr, n))
+
+    function kiemTra(arr, n) {
+        let count = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (n === arr[i]) {
+                count++
+            }
+        }
+        if (count === 0){
+            return -1
+        } else {
+            return "Số phần tử " + n + " trong mảng là " + count
+        }
+    }
+</script>
+</body>
+</html>

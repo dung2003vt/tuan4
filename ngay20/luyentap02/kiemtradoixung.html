@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let text = prompt("Hãy nhập từ cần kiểm tra :")
+    function palindrom(arr) {
+
+        if (arr[0] === arr[arr.length - 1]) {
+            if (arr.length === 1 || arr.length === 0) {
+                return "Đây là chuỗi palindrom"
+            } else {
+              let arr1 =  arr.splice(arr[0],arr.length-1);
+              let arr2 = arr1.splice(arr1[arr1.length - 1],1)
+                }
+        } else {
+            return "Đây không phải chuỗi palindrom"
+        }
+    }
+    let arr = text.split("")
+    palindrom(arr)
+</script>
+</html>
