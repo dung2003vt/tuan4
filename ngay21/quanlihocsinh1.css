@@ -1,0 +1,29 @@
+table {
+    width: 600px;
+}
+
+th {
+    width: 25%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+td {
+    text-align: left;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+button {
+    height: 30px;
+    width: 65px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0dbe0d;
+    color: white;
+    font-size: 15px;
+}

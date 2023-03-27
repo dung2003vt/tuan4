@@ -1,0 +1,65 @@
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: goldenrod;
+    height: 70px;
+    justify-content: center;
+}
+
+.flex-container .logo {
+    background-color: goldenrod;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.input1 {
+    background-color: goldenrod;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+}
+
+body{
+    margin-top: 0;
+    margin-left: 0;
+}
+table {
+    width: 600px;
+}
+.hotline > div{
+     color: white;
+}
+
+th {
+    width: 25%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+td {
+    text-align: left;
+}
+
+.search {
+    width: 300px;
+    height: 25px;
+}
+.butt{
+   width: 30px;
+    height: 30px;
+}
+.hotline{
+    text-align: center;
+    justify-content: center;
+}

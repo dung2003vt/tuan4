@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhâp</title>
+    <link rel="stylesheet" href="dangNhap.css">
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <td class="login">Tên đăng nhập:</td>
+            <td class="pass"><input type="text" id="username" placeholder="Tên đăng nhập"></td>
+        </tr>
+        <tr>
+            <td class="login">Mật khẩu:</td>
+            <td class="pass"><input type="password" id="password" placeholder="Mật khẩu"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="butt">
+                <button onclick="login()">Đăng nhập</button>
+                <button onclick="chuyenHuong()">Đăng ký</button>
+            </td>
+        </tr>
+
+        <script src="Account.js"></script>
+        <script src="Login.js"></script>
+        <script>
+            function chuyenHuong() {
+                window.document.location.href = "DangKy.html"
+            }
+        </script>
+    </table>
+</div>
+</body>
+</html>

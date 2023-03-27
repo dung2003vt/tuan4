@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Student {
+        id
+        age
+        name
+        gender
+
+        constructor(id, age, name, gender) {
+            this.id = id
+            this.age = age
+            this.name = name
+            this.gender = gender
+        }
+
+        getId() {
+            return this.id
+        }
+
+        getAge() {
+            return this.age
+        }
+
+        getName() {
+            return this.name
+        }
+
+        getGender() {
+            return this.gender
+        }
+        setId(id){
+            this.id = id
+        }
+        setAge(age){
+            this.age = age
+        }
+        setName(name){
+            this.name = name
+        }
+        setGender(gender){
+            this.gender = gender
+        }
+    }
+    let student = new Student(1,21,"Thái", "Lam")
+    editGender(student)
+    function editGender(student){
+        student.setGender("Lữ")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class student {
+        name;
+        age;
+        gender;
+        constructor(name, age, gender) {
+            this.name = name
+            this.age = age
+            this.gender = gender
+        }
+        getname(){
+            return this.name
+        }
+        getage(){
+            return this.age
+        }
+        getgender(){
+            return this.gender
+        }
+    }
+
+    let student1 = new student("Lê Anh Tuấn", "21", "Nữ")
+    let student2 = new student("Nguyễn Văn Thái", "23", "Lam")
+    let student3 = new student("Lê Văn Đức", "28", "Trai hàn")
+    arr = []
+    arr.push(student1, student2, student3)
+    document.write(student1.getname())
+    console.log(student1)
+</script>
+</body>
+</html>
